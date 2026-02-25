@@ -19,6 +19,10 @@ body {
   color: #ffffff;
 }
 
+.text-orange-dark {
+  color: #FD6F00;
+}
+
 button {
   cursor: pointer;
 }
