@@ -1,5 +1,5 @@
-import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Next, Prev, Swipersvg } from "./common/Icons";
@@ -15,23 +15,28 @@ const SwiperServices = () => {
           Services I provide to make a greater impact on your company
         </p>
       </div>
-      <div>
-        <button className="swiper-button-prev relative left-0 top-1/2 transform -translate-y-1/2 z-10">
+      <div className="relative">
+        {/* <button className="swiper-button-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
           <Prev />
-        </button>
+        </button> */}
         <Swiper
-          navigation={{
-            prevEl: ".swiper-button-prev",
-            nextEl: ".swiper-button-next",
-          }}
+          modules={[Navigation, Autoplay]}
+          // onBeforeInit={(swiper) => {
+          //   swiper.params.navigation.prevEl = ".swiper-button-prev";
+          //   swiper.params.navigation.nextEl = ".swiper-button-next";
+          // }}
+          // navigation={{
+          //   prevEl: ".swiper-button-prev",
+          //   nextEl: ".swiper-button-next",
+          // }}
           spaceBetween={20}
           slidesPerView={3}
           autoplay={{
-            delay: 100,
+            delay: 1000,
             disableOnInteraction: false,
           }}
           loop={true}
-          className="text-medium-white text-center  mx-auto"
+          className="text-medium-white text-center   mx-auto"
         >
           <SwiperSlide>
             <div className="flex flex-col justify-center items-center  px-6 bg-[#232323] rounded-3xl py-[43.68px]">
@@ -95,9 +100,9 @@ const SwiperServices = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        <button className="swiper-button-next relative right-0 top-1/2 transform -translate-y-1/2 z-10">
+        {/* <button className="swiper-button-next absolute right-0 top-1/2 transform -translate-y-1/2 z-10">
           <Next />
-        </button>
+        </button> */}
       </div>
     </section>
   );
