@@ -3,10 +3,11 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Next, Prev, Swipersvg } from "./common/Icons";
+import { ReviewData } from "./common/Helper";
 
 const SwiperServices = () => {
   return (
-    <section className="mb-25">
+    <section className="mb-25 px-5">
       <div className="mb-10.75 max-w-118 mx-auto">
         <h2 className="font-syne mb-3.5 font-bold text-[24px] sm:text-[32px] md:text-4xl lg:text-[55px] text-medium-white  text-center ">
           Services
@@ -16,93 +17,36 @@ const SwiperServices = () => {
         </p>
       </div>
       <div className="relative">
-        {/* <button className="swiper-button-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
-          <Prev />
-        </button> */}
         <Swiper
           modules={[Navigation, Autoplay]}
-          // onBeforeInit={(swiper) => {
-          //   swiper.params.navigation.prevEl = ".swiper-button-prev";
-          //   swiper.params.navigation.nextEl = ".swiper-button-next";
-          // }}
-          // navigation={{
-          //   prevEl: ".swiper-button-prev",
-          //   nextEl: ".swiper-button-next",
-          // }}
           spaceBetween={20}
-          slidesPerView={3}
+          slidesPerView={1}
           autoplay={{
             delay: 1000,
             disableOnInteraction: false,
           }}
+          breakpoints={{
+            520: { slidesPerView: 1 },
+            700: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
           loop={true}
-          className="text-medium-white text-center   mx-auto"
+          className="text-medium-white text-center mx-auto"
         >
-          <SwiperSlide>
+          
+            {ReviewData.map((item,index) =>
+            <SwiperSlide key={index}>
             <div className="flex flex-col justify-center items-center  px-6 bg-[#232323] rounded-3xl py-[43.68px]">
-              <Swipersvg />
-              <h4 className="text-orange-dark text-3xl mt-4.5">Web Design</h4>
+              {item.svg}
+              <h4 className="text-orange-dark text-3xl mt-4.5">{item.name}</h4>
               <p className="text-[16px] mt-6 text-ffff">
-                Worked with companies, creating user-friendly, innovative
-                solutions for real-world challenges.
+                {item.review}
               </p>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col justify-center items-center  px-6 bg-[#232323] rounded-3xl py-[43.68px]">
-              <Swipersvg />
-              <h4 className="text-orange-dark text-3xl mt-4.5">Web Design</h4>
-              <p className="text-[16px] mt-6 text-ffff">
-                Worked with companies, creating user-friendly, innovative
-                solutions for real-world challenges.
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col justify-center items-center  px-6 bg-[#232323] rounded-3xl py-[43.68px]">
-              <Swipersvg />
-              <h4 className="text-orange-dark text-3xl mt-4.5">Web Design</h4>
-              <p className="text-[16px] mt-6 text-ffff">
-                Worked with companies, creating user-friendly, innovative
-                solutions for real-world challenges.
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="flex flex-col justify-center items-center  px-6 bg-[#232323] rounded-3xl py-[43.68px]">
-              <Swipersvg />
-              <h4 className="text-orange-dark text-3xl mt-4.5">Web Design</h4>
-              <p className="text-[16px] mt-6 text-ffff">
-                Worked with companies, creating user-friendly, innovative
-                solutions for real-world challenges.
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col justify-center items-center  px-6 bg-[#232323] rounded-3xl py-[43.68px]">
-              <Swipersvg />
-              <h4 className="text-orange-dark text-3xl mt-4.5">Web Design</h4>
-              <p className="text-[16px] mt-6 text-ffff">
-                Worked with companies, creating user-friendly, innovative
-                solutions for real-world challenges.
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col justify-center items-center  px-6 bg-[#232323] rounded-3xl py-[43.68px]">
-              <Swipersvg />
-              <h4 className="text-orange-dark text-3xl mt-4.5">Web Design</h4>
-              <p className="text-[16px] mt-6 text-ffff">
-                Worked with companies, creating user-friendly, innovative
-                solutions for real-world challenges.
-              </p>
-            </div>
-          </SwiperSlide>
+          )}
         </Swiper>
-        {/* <button className="swiper-button-next absolute right-0 top-1/2 transform -translate-y-1/2 z-10">
-          <Next />
-        </button> */}
+       
       </div>
     </section>
   );
