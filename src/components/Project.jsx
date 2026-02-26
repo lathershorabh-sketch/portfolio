@@ -64,6 +64,9 @@ const Project = () => {
           alt="linear-gradient"
         />
       </div>
+      <button className="text-orange-dark border py-6 px-10 rounded-[39px] mt-10 flex justify-center mx-auto">
+        Load more works
+      </button>
     </section>
   );
 };
