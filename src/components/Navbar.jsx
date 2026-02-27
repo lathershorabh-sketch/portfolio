@@ -41,7 +41,7 @@ const Navbar = () => {
             {Navlist.map((links, sourabh) => (
               <a
                 key={sourabh}
-                className="hover:text-white duration-300 ease-in-out "
+                className="hover:text-white duration-300 transition-all ease-in-out "
                 href="/"
                 onClick={() => setOpen(false)}
               >

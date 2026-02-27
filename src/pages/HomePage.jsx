@@ -4,6 +4,8 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import SwiperServices from "../components/SwiperServices";
 import Project from "../components/Project";
+import Work from "../components/Work";
+import Testimonials from "../components/Testimonials";
 
 const HomePage = () => {
   return (
@@ -13,6 +15,8 @@ const HomePage = () => {
       <AboutUs />
       <SwiperServices />
       <Project />
+      <Work />
+      <Testimonials/>
     </>
   );
 };
