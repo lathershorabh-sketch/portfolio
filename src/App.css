@@ -5,6 +5,8 @@
   --font-lato: "Lato", sans-serif;
   --font-rubik: "Rubik", sans-serif;
   --font-syne: "Syne", sans-serif;
+  --font-k2d: "K2D", sans-serif;
+  --text-color-orange-dark: #fd6f00;
 }
 
 body {
@@ -17,10 +19,6 @@ body {
 
 .text-medium-white {
   color: #ffffff;
-}
-
-.text-orange-dark {
-  color: #FD6F00;
 }
 
 button {

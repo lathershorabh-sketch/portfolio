@@ -64,7 +64,7 @@ const Project = () => {
           alt="linear-gradient"
         />
       </div>
-      <button className="text-orange-dark border py-6 px-10 rounded-[39px] mt-10 flex justify-center mx-auto">
+      <button className="text-orange-dark hover:text-white hover:bg-text-orange-dark hover:shadow-[0_0_25px_rgba(255,255,255,0.7)] ease-linear border py-6 px-10 rounded-[39px] mt-10 flex justify-center mx-auto transition duration-300">
         Load more works
       </button>
     </section>

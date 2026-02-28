@@ -54,3 +54,11 @@ export const galleryImgs = [
   { img: img5, className: "max-w-60 h-auto" },
 ];
 
+export const Fotterlinks = [
+  "Home",
+  "Services",
+  "About me",
+  "Portfolio",
+  "Contact me"
+]
+
