@@ -6,3 +6,4 @@ export const Button = ({ text, icon }) => {
     </button>
   );
 };
+

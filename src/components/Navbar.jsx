@@ -35,14 +35,14 @@ const Navbar = () => {
           {open ? <CloseIcon /> : <Hamburger />}
         </button>
         <ul
-          className={`fixed inset-0 bg-white z-30 transition-all duration-500 ${open ? "translate-y-0" : "-translate-y-full"}`}
+          className={`fixed inset-0 bg-white z-30 transition-all duration-500 ${open ? "translate-x-0" : "-translate-x-full"}`}
         >
           <div className="flex justify-center items-center flex-col gap-4 min-h-screen text-2xl">
             {Navlist.map((links, sourabh) => (
               <a
                 key={sourabh}
                 className="hover:text-white duration-300 transition-all ease-in-out "
-                href="/"
+                href="#"
                 onClick={() => setOpen(false)}
               >
                 {links}

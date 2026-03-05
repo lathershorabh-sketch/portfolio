@@ -19,9 +19,9 @@ const AboutUs = () => {
       </div>
       <div className="max-w-100.75 md:max-w-95 lg:max-w-110 w-full ">
         <img
-          className="rounded-xl sm:rounded-[35px]"
+          className=" inline-block rounded-3xl overflow-hidden transition-all duration-500 ease-out hover:scale-105 hover:shadow-[0_20px_60px_rgba(0,0,0,0.485)]"
           src="./src/assets/Images/SourabhLather.jpeg"
-          alt="shubhangi"
+          alt="sourabh-lather"
         />
       </div>
       <div className="absolute -left-130 -top-30 w-full h-full -z-10">

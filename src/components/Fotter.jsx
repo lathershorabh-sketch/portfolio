@@ -15,9 +15,14 @@ const Fotter = () => {
         <h3 className="text-[#FA6E00] text-4xl font-k2d text-center">
           SOURABH LATHER
         </h3>
-        <ul className="text-[#959595] flex flex-wrap px-5 md:px-0 mx-auto max-w-180 my-5 md:my-10 text-[16px] md:text-2xl gap-5 sm:gap-10 md:gap-0 justify-center md:justify-between">
+        <ul className="text-[#959595]  flex flex-wrap px-5 md:px-0 mx-auto max-w-180 my-5 md:my-10 text-[16px] md:text-2xl gap-5 sm:gap-10 md:gap-0 justify-center md:justify-between">
           {Fotterlinks.map((links, index) => (
-            <li key={index}>{links}</li>
+            <li
+              className="hover:text-white transition-all duration-300 ease-linear"
+              key={index}
+            >
+              {links}
+            </li>
           ))}
         </ul>
         <div className="flex gap-5 md:gap-12 justify-center mb-5 lg:mb-15 px-5 md:px-0">

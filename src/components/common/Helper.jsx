@@ -59,6 +59,11 @@ export const Fotterlinks = [
   "Services",
   "About me",
   "Portfolio",
-  "Contact me"
-]
+  "Contact me",
+];
 
+// export const Navbar = [
+//   {
+//     img: navlogo,
+//   },
+// ];

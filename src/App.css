@@ -7,6 +7,11 @@
   --font-syne: "Syne", sans-serif;
   --font-k2d: "K2D", sans-serif;
   --text-color-orange-dark: #fd6f00;
+  --text-color-medium-black: #949494;
+}
+
+.text-medium-white {
+  --text-color-medium-black: #949494;
 }
 
 body {
