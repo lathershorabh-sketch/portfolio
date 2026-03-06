@@ -1,17 +1,16 @@
-import AboutContent from "../components/AboutContent";
-import AboutGallery from "../components/AboutGallery";
-import AboutHero from "../components/AboutHero";
-import Fotter from "../components/Fotter";
+import React from "react";
 import Navbar from "../components/Navbar";
+import ContactHero from "../components/ContactHero";
+import ContactForm from "../components/ContactForm";
+import Fotter from "../components/Fotter";
 
 const Contactpage = () => {
   return (
     <section>
       <Navbar />
-      <AboutHero/>
-      <AboutContent/>
-      <AboutGallery/>
-      <Fotter/>
+      <ContactHero />
+      <ContactForm />
+      <Fotter />
     </section>
   );
 };

@@ -5,7 +5,7 @@ const AboutContent = () => {
     <section>
       <div className="max-w-250 w-full mx-auto mb-10 lg:mb-20">
         <div className="text-white max-w-230 w-full gap-5 flex flex-col md:flex-row justify-center lg:justify-between mb-10 md:mb-6 px-5 lg:px-0">
-          <h3 className="text-center md:text-start mx-auto md:mx-0 max-w-100 text-[24px] sm:text-[28px] md:text-[38px] lg:text-[48px] w-full leading-[119%]">
+          <h3 className="text-center md:text-start mx-auto md:mx-0 max-w-100 text-[24px] sm:text-[28px] md:text-[38px] lg:text-[48px] w-full leading-[119%] font-bold font-syne">
             My Mission is to make design easier.
           </h3>
           <p className="text-center md:text-start md:max-w-80 lg:max-w-100 text-[10px] sm:text-[14px] md:text-[18px] lg:text-[20px]">
