@@ -1,10 +1,21 @@
 import navlogo from "../assets/images/navlogo.svg";
 import { Navlist } from "./common/Helper";
 import { CloseIcon, Hamburger } from "./common/Icons";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <>
       <nav className="flex max-w-[585.96px] md:max-w-200 lg:max-w-285  justify-between items-center mx-auto px-5 xl:px-0">
