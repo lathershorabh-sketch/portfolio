@@ -5,7 +5,7 @@ const ContactHero = () => {
   return (
     <section className="px-5">
       <HeroSecond text={"Contact Me"} subtitle={"For Any Project Knock Me"} />
-      <div className="max-w-285 h-0.5 w-full bg-[#949494] mx-auto mb-20 "></div>
+      <div className="max-w-285 h-0.5 w-full bg-[#949494] mx-auto mb-10 lg:mb-20 "></div>
     </section>
   );
 };

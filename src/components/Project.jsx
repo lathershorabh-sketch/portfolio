@@ -11,7 +11,7 @@ const Project = () => {
       <div className="flex flex-col md:flex-row gap-15 md:gap-6 items-center max-w-285 w-full justify-center md:justify-between mx-auto ">
         <div>
           <img
-            className="max-w-90 lg:max-w-120 w-full h-auto object-contain"
+            className="max-w-90 lg:max-w-120 w-full h-auto object-contain hover:scale-105 transition-all duration-300 hover:drop-shadow-[0_20px_30px_rgba(212,176,123,0.5)]"
             src={Phantazia}
             alt="phantazia"
           />
@@ -35,7 +35,7 @@ const Project = () => {
         </div>
         <div>
           <img
-            className="max-w-90 lg:max-w-120 w-full h-99.5 lg:h-133"
+            className="max-w-90 lg:max-w-120 w-full h-99.5 lg:h-133 transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_20px_30px_rgba(0,0,255,0.5)]"
             src={Puzzle}
             alt="puzzle"
           />

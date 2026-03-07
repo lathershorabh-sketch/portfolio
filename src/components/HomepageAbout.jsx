@@ -1,6 +1,6 @@
 import { Button } from "./Button";
 import LinearGradient from "../assets/images/LinearGradient.png";
-const AboutUs = () => {
+const HomepageAbout = () => {
   return (
     <section className="relative mt-10 md:mt-15 lg:mt-[118.66px] mb-10 md:mb-24.5 flex flex-col md:flex-row items-center justify-center lg:justify-between max-w-285  mx-auto px-5 gap-10 md:gap-6">
       <div className="w-full md:max-w-155">
@@ -19,7 +19,7 @@ const AboutUs = () => {
       </div>
       <div className="max-w-100.75 md:max-w-95 lg:max-w-110 w-full ">
         <img
-          className=" inline-block rounded-3xl overflow-hidden transition-all duration-500 ease-out hover:scale-105 hover:shadow-[0_20px_60px_rgba(0,0,0,0.485)]"
+          className=" inline-block rounded-3xl overflow-hidden transition-all duration-500 ease-out hover:scale-105 hover:drop-shadow-[0_20px_30px_rgba(0,388,0,0.485)]"
           src="./src/assets/Images/SourabhLather.jpeg"
           alt="sourabh-lather"
         />
@@ -31,4 +31,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default HomepageAbout;
