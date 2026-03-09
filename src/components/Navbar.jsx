@@ -1,7 +1,7 @@
 import navlogo from "../assets/images/navlogo.svg";
 import { Navlist } from "./common/Helper";
 import { CloseIcon, Hamburger } from "./common/Icons";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -28,7 +28,7 @@ const Navbar = () => {
           <ul className="text-medium-white flex justify-between text-[7.4px] md:text-[10.2px] lg:text-[16px] gap-[34.86px] cursor-pointer ">
             {Navlist.map((links, sourabh) => (
               <li key={sourabh} className="hover: duration-300 ease-in-out">
-                <a className="relative group" href="#">
+                <a className="relative group" href="/">
                   {links}
                   <span className="absolute group-hover:w-full  transition-all duration-300 ease-in-out left-0 w-0 h-px bg-white -bottom-1"></span>
                 </a>
@@ -53,10 +53,10 @@ const Navbar = () => {
               <a
                 key={sourabh}
                 className="hover:text-white duration-300 transition-all ease-in-out "
-                href="#"
+                href={links.href}
                 onClick={() => setOpen(false)}
               >
-                {links}
+                {links.link}
               </a>
             ))}
           </div>

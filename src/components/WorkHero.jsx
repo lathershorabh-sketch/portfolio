@@ -1,7 +1,7 @@
 import { HeroSecond } from "./common/HeroSecond";
 import LinearGradient from "../assets/images/LinearGradient.png";
 
-const Hero2 = () => {
+const WorkHero = () => {
   return (
     <section className="px-5 xl:px-0">
       <HeroSecond text={"My works"} subtitle={"Showcase About Works"} />
@@ -13,4 +13,4 @@ const Hero2 = () => {
   );
 };
 
-export default Hero2;
+export default WorkHero;

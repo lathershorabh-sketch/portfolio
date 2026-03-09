@@ -1,5 +1,5 @@
 import { galleryImgs } from "./common/Helper";
-const Work = () => {
+const HomepageWork = () => {
   return (
     <section className="mb-0 lg:mb-20">
       <h2 className="font-syne font-bold text-[24px] sm:text-[32px] md:text-4xl lg:text-[55px] text-medium-white text-center mb-0 lg:mb-10">
@@ -16,4 +16,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default HomepageWork;

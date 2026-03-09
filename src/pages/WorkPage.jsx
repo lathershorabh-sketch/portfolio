@@ -1,14 +1,14 @@
 import Fotter from "../components/Fotter";
-import Gallery from "../components/Gallery";
-import Hero2 from "../components/Hero2";
 import Navbar from "../components/Navbar";
+import WorkGallery from "../components/WorkGallery";
+import WorkHero from "../components/WorkHero";
 
 const WorkPage = () => {
   return (
     <section>
       <Navbar />
-      <Hero2 />
-      <Gallery />
+      <WorkHero/>
+      <WorkGallery />
       <Fotter />
     </section>
   );

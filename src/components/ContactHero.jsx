@@ -1,4 +1,3 @@
-import React from "react";
 import { HeroSecond } from "./common/HeroSecond";
 
 const ContactHero = () => {

@@ -21,7 +21,7 @@ const Fotter = () => {
               className="hover:text-white transition-all duration-300 ease-linear"
               key={index}
             >
-              {links}
+              <a href="/">{links}</a>
             </li>
           ))}
         </ul>

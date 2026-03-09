@@ -18,12 +18,12 @@ const AboutContent = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between px-5 xl:px-0 gap-10 md:gap-5">
           <img
-            className="max-w-95 mx-auto md:mx-0  rounded-3xl w-full h-95 object-cover"
+            className="max-w-95 mx-auto md:mx-0  rounded-3xl w-full h-95 object-cover transition-all duration-500 ease-out hover:scale-105 hover:drop-shadow-[0_20px_30px_rgba(0,388,0,0.485)]"
             src={SourabhLather}
             alt="Sourabh Lather"
           />
           <img
-            className="max-w-130 rounded-3xl mx-auto md:mx-0 w-full h-80 object-cover mt-0 md:mt-15"
+            className="max-w-130 rounded-3xl mx-auto md:mx-0 w-full h-80 object-cover mt-0 md:mt-15 transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_20px_30px_rgba(255,221,0,0.7)]"
             src={sorb}
             alt="Sorb"
           />

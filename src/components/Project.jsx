@@ -4,7 +4,7 @@ import LinearGradient from "../assets/Images/LinearGradient.png";
 
 const Project = () => {
   return (
-    <section className="relative mb-15 px-5 xl:px-0">
+    <section className="relative mb-10 lg:mb-15 px-5 xl:px-0">
       <h2 className="font-syne font-bold text-[24px] sm:text-[32px] md:text-4xl lg:text-[55px] text-medium-white text-center mb-10 lg:mb-15.75">
         My Projects Highlight
       </h2>
@@ -64,7 +64,7 @@ const Project = () => {
           alt="linear-gradient"
         />
       </div>
-      <button className="text-orange-dark hover:text-white hover:bg-text-orange-dark hover:shadow-[0_0_25px_rgba(255,255,255,0.7)] ease-linear border py-6 px-10 rounded-[39px] mt-10 flex justify-center mx-auto transition duration-300">
+      <button className="text-orange-dark hover:text-white hover:bg-text-orange-dark hover:shadow-[0_0_25px_rgba(255,255,255,0.7)] ease-linear border px-6 sm:px-10 py-4 sm:py-5 rounded-[39px] mt-6 lg:mt-10 flex justify-center mx-auto transition duration-300">
         Load more works
       </button>
     </section>

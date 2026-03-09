@@ -2,7 +2,7 @@ import { Button } from "./Button";
 import LinearGradient from "../assets/images/LinearGradient.png";
 const HomepageAbout = () => {
   return (
-    <section className="relative mt-10 md:mt-15 lg:mt-[118.66px] mb-10 md:mb-24.5 flex flex-col md:flex-row items-center justify-center lg:justify-between max-w-285  mx-auto px-5 gap-10 md:gap-6">
+    <section id="about" className="relative mt-10 md:mt-15 lg:mt-[118.66px] mb-10 md:mb-24.5 flex flex-col md:flex-row items-center justify-center lg:justify-between max-w-285  mx-auto px-5 gap-10 md:gap-6">
       <div className="w-full md:max-w-155">
         <h2 className="relative font-syne font-bold text-[24px] sm:text-[32px] md:text-4xl lg:text-[55px] text-medium-white w-full lg:max-w-145  leading-[120%] text-center md:text-left">
           Let’s get know about me closer
@@ -19,7 +19,7 @@ const HomepageAbout = () => {
       </div>
       <div className="max-w-100.75 md:max-w-95 lg:max-w-110 w-full ">
         <img
-          className=" inline-block rounded-3xl overflow-hidden transition-all duration-500 ease-out hover:scale-105 hover:drop-shadow-[0_20px_30px_rgba(0,388,0,0.485)]"
+          className=" inline-block rounded-3xl overflow-hidden transition-all duration-500 ease-out hover:scale-105 hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.7)]"
           src="./src/assets/Images/SourabhLather.jpeg"
           alt="sourabh-lather"
         />

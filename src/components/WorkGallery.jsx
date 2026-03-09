@@ -7,7 +7,7 @@ import farmer from "../assets/Images/faemer.png";
 import lavalamp from "../assets/Images/lavalamp.png";
 import cyberpunk from "../assets/Images/cyberpunk.jpg";
 import phantazia from "../assets/Images/phantazia.png";
-const Gallery = () => {
+const WorkGallery = () => {
   return (
     <section className="mb-10 lg:mb-40">
       <div className="flex flex-wrap  mx-auto max-w-285 gap-10 sm:gap-20 lg:gap-6 justify-center xl:justify-between  mb-5 px-5 xl:px-0">
@@ -45,7 +45,7 @@ const Gallery = () => {
                 alt="Sourabh Lather"
               />
               <img
-                className="max-w-55 rounded-3xl w-full h-38 object-cover mt-7"
+                className="max-w-55 rounded-3xl w-full h-38 object-cover mt-7 "
                 src={sorb}
                 alt="Sorb"
               />
@@ -166,4 +166,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default WorkGallery;
